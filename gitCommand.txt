@@ -1,0 +1,5 @@
+git add |filename| - adds untracked |filename| to staged.
+git add -A - adds all untracked file to staged.
+git status - checks on the file status it shows whether the file is untracked, unmodified, modified or staged.
+git status -s - it shows a concise status of the files
+git commit |filename| - 
