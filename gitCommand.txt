@@ -1,5 +1,13 @@
+GIT is a version control system.
+->It keeps track of the files.
+->Easy file recovery
+->Roll back to previously working state
+
+GIT Commands
+git init - creates a git repository.
 git add |filename| - adds untracked |filename| to staged.
-git add -A - adds all untracked file to staged.
+git add -A/git add --a - adds all changes in tracked files and untracked file to staged.
 git status - checks on the file status it shows whether the file is untracked, unmodified, modified or staged.
 git status -s - it shows a concise status of the files
-git commit |filename| - 
+git commit - to commit the staged files
+git commit -m "Commit Message" - to skip the editor
