@@ -7,7 +7,7 @@ GIT Commands
 code . - it opens VScode int the selected folder.
 git init - creates a git repository.
 git add |filename| - adds untracked or modified file to staged.
-git add -A/git add --a - adds all changes in tracked files and untracked file to staged.
+git add -A/git add --a/git add . - adds all changes in tracked files and untracked file to staged.
 git status - checks on the file status it shows whether the file is untracked, unmodified, modified or staged.
 git status -s - it shows a concise status of the files
 git commit - to commit the staged files
@@ -16,3 +16,11 @@ git log - shows all the commit record with the commit message.
 git log -p -n - shows the last n commit records with the commit message.
 rm -rf .git - deletes the entire git repository
 git clone |URL| - it pulls a repository from github and creates a clone of it in the local computer any changes the files only affects the cloned version present in the local device. It can be published by using git push command.
+git diff - compares modified files to staged files.
+git diff --staged - compares staged files to previous commit.
+
+gitignore ways to ignore
+->|filename|.|extension| - just mentioning the name and extension makes git ignore the file for any changes.
+->*.|extension| - git ignores all file with corresponding extension.
+->|foldername|/ - mentioning the folder name in this way makes git ignore all the directory with the corresponding name and its content.
+->adding a '/' before folder name makes it so that folder present in the root directory with the corresponding name gets ignored and not all the directory with the same name.
