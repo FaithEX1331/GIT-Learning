@@ -4,10 +4,15 @@ GIT is a version control system.
 ->Roll back to previously working state
 
 GIT Commands
+code . - it opens VScode int the selected folder.
 git init - creates a git repository.
-git add |filename| - adds untracked |filename| to staged.
+git add |filename| - adds untracked or modified file to staged.
 git add -A/git add --a - adds all changes in tracked files and untracked file to staged.
 git status - checks on the file status it shows whether the file is untracked, unmodified, modified or staged.
 git status -s - it shows a concise status of the files
 git commit - to commit the staged files
 git commit -m "Commit Message" - to skip the editor
+git log - shows all the commit record with the commit message.
+git log -p -n - shows the last n commit records with the commit message.
+rm -rf .git - deletes the entire git repository
+git clone |URL| - it pulls a repository from github and creates a clone of it in the local computer any changes the files only affects the cloned version present in the local device. It can be published by using git push command.
