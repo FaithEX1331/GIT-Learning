@@ -19,7 +19,7 @@ git checkout -f - reverts all changes of every file to the previous commit.
 git log -p -n - shows the last n commit records with the commit message.
 rm -rf .git - deletes the entire git repository
 git rm |filename| - removes the corresponding file from both staged area and the hard disk.
-git rm --cached |filename| - removes the corresponding file only from the staged area.
+git rm --cached |filename| - removes the corresponding file only from the staged area and puts the file in the untracked area.
 git clone |URL| - it pulls a repository from github and creates a clone of it in the local computer any changes the files only affects the cloned version present in the local device. It can be published by using git push command.
 git diff - compares modified files to staged files.
 git diff --staged - compares staged files to previous commit.
