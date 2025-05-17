@@ -35,7 +35,7 @@ git diff --staged - compares staged files to previous commit.
 git mv |oldfilename| |newfilename| - renames the file and adds it to the staging area.
 git restore --staged |filename| - removes the file from the staged area(it does not stop tracking the file)
 
-git alias
+git alias syntax
 git config --global alias.|short name| |command| - makes an alias with the name |short name| instead of |command|
 
 gitignore ways to ignore
