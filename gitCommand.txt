@@ -33,6 +33,7 @@ git clone |URL| - it pulls a repository from github and creates a clone of it in
 git diff - compares modified files to staged files.
 git diff --staged - compares staged files to previous commit.
 git mv |oldfilename| |newfilename| - renames the file and adds it to the staging area.
+git restore --staged |filename| - removes the file from the staged area(it does not stop tracking the file)
 
 gitignore ways to ignore
 ->|filename|.|extension| - just mentioning the name and extension makes git ignore the file for any changes.
