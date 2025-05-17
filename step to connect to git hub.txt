@@ -1,0 +1,28 @@
+Step 1:
+Create a new repository in git hub.
+Step 2:
+Copy the first line given to the Git bash and press enter
+for example: 
+git remote add origin ttps://github.com/FaithEX1331/GIT-Learning.git
+This will connect your folder to the GitHub repository online.
+Step 4:
+Now you can push.
+But if you are in a new computer and do not have access for authorization.
+Copy the following into the git bash.
+ssh-keygen -t rsa -b 4096 -C "faithex1331gmail.com"
+Step 5:
+Once you press enter it will start generating the key.
+When ever it stops and asks for something just press enter.
+Step 6:
+Once done check whether ssh agent is running or not by copying the following in the Git bash.
+eval $(ssh-agent -s)
+Step 7:
+Now add a ssh key
+ssh-add ~/.ssh/id_rsa
+Step 8:
+Get the ssh key, copy the following code in the git bash
+tail ~/.ssh/id_rsa.pub
+Step 9:
+copy the ssh key and paste it in the key section.
+and press add new ssh key
+
