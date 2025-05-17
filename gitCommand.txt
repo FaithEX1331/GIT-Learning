@@ -3,6 +3,12 @@ GIT is a version control system.
 ->Easy file recovery
 ->Roll back to previously working state
 
+Alias is used to give short name to a long command.
+
+restore is a dedicated rollback function in git while checkout is used for a lot of purposes.
+
+Branch is a sub part of the main branch. In the branch we can change things and use it for testing new features and functions and check if any changes throws any unexpected errors. If there are no unexpected errors then we can merge it into the main branch and update the changes onto the main branch but if there are any unexpected errors or undesired changes then we can chose to remove the entire branch.
+
 GIT Commands
 code . - it opens VScode int the selected folder.
 git init - creates a git repository.
@@ -37,6 +43,9 @@ git restore --staged |filename| - removes the file from the staged area(it does 
 
 git alias syntax
 git config --global alias.|short name| |command| - makes an alias with the name |short name| instead of |command|
+
+Switching to a new branch
+git checkout -b |branchname| - creates a new branch with the given branch name and switches to it.
 
 gitignore ways to ignore
 ->|filename|.|extension| - just mentioning the name and extension makes git ignore the file for any changes.
