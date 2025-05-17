@@ -1,0 +1,54 @@
+GIT is a version control system.
+->It keeps track of the files.
+->Easy file recovery
+->Roll back to previously working state
+
+Alias is used to give short name to a long command.
+
+restore is a dedicated rollback function in git while checkout is used for a lot of purposes.
+
+Branch is a sub part of the main branch. In the branch we can change things and use it for testing new features and functions and check if any changes throws any unexpected errors. If there are no unexpected errors then we can merge it into the main branch and update the changes onto the main branch but if there are any unexpected errors or undesired changes then we can chose to remove the entire branch.
+
+GIT Commands
+code . - it opens VScode int the selected folder.
+git init - creates a git repository.
+git add |filename| - adds untracked or modified file to staged.
+git add -A/git add --a/git add . - adds all changes in tracked files and untracked file to staged.
+git status - checks on the file status it shows whether the file is untracked, unmodified, modified or staged.
+git status -s - it shows a concise status of the files
+git commit - to commit the staged files
+git commit -m "Commit Message" - to skip the editor
+git commit -a -m "Direct commit" - this is a way to directly commit modified files without sending them to staged area. Does not work on untracked files. Rarely used.
+git commit --amend - adds changes to the last commit.
+git log - shows all the commit record.
+git log -n - shows n commit record.
+git log -p - shows the changes done in the repository for all the commits done till date.
+git log -p -n - shows the changes done in the repository for the last n commits.
+git log --stat - shows the changes with done in the commits in a concise way. It shows info such as the author, date, commit message, no of files changed, number of insertions performed, number of deletions performed in specific files.
+git log --pretty=n - shows log in one line
+git log --pretty=short - shows only author and commit message.
+git log --pretty=full - shows author, commiter and the commit message.
+git log --since=n.|days/weeks/months/years| - shows the log for the last n||s.
+git log --pretty=format:"" - shows log in a particular format. look for format documentation for useful placeholder.
+git checkout |filename| - it reverts the conditon of the files to the previous commit.
+git checkout -f - reverts all changes of every file to the previous commit.
+rm -rf .git - deletes the entire git repository
+git rm |filename| - removes the corresponding file from both staged area and the hard disk.
+git rm --cached |filename| - removes the corresponding file only from the staged area and puts the file in the untracked area.
+git clone |URL| - it pulls a repository from github and creates a clone of it in the local computer any changes the files only affects the cloned version present in the local device. It can be published by using git push command.
+git diff - compares modified files to staged files.
+git diff --staged - compares staged files to previous commit.
+git mv |oldfilename| |newfilename| - renames the file and adds it to the staging area.
+git restore --staged |filename| - removes the file from the staged area(it does not stop tracking the file)
+
+git alias syntax
+git config --global alias.|short name| |command| - makes an alias with the name |short name| instead of |command|
+
+Switching to a new branch
+git checkout -b |branchname| - creates a new branch with the given branch name and switches to it.
+
+gitignore ways to ignore
+->|filename|.|extension| - just mentioning the name and extension makes git ignore the file for any changes.
+->*.|extension| - git ignores all file with corresponding extension.
+->|foldername|/ - mentioning the folder name in this way makes git ignore all the directory with the corresponding name and its content.
+->adding a '/' before folder name makes it so that folder present in the root directory with the corresponding name gets ignored and not all the directory with the same name.
