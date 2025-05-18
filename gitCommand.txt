@@ -51,6 +51,7 @@ git branch - shows the list of all the local branch
 git branch --merged - it shows a list of branch that have been fully integrated in the master branch. It helps us check which branch is safe to delete.
 git branch --no-merged - it shows a list of branch that yet to be merged into the master branch.
 git branch -d |branchname| - deletes the specific branch if it has been fully merged into the master branch, otherwise if the branch has changes that has not been reflected in the master branch then it throw an error asking for confirmation to proceed with delete by replacing -d with -D.
+git branch -v - shows a list of branch and their last commit.
 git merge |branchname| - merges the specific branch to the master branch.  
 
 gitignore ways to ignore
