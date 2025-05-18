@@ -54,6 +54,12 @@ git branch -d |branchname| - deletes the specific branch if it has been fully me
 git branch -v - shows a list of branch and their last commit.
 git merge |branchname| - merges the specific branch to the master branch.  
 
+GIT push Commands
+git push -u origin master - to push in remote repository
+git push origin |branchname| - pushes branch to remote
+git push origin |branchname|:|alias| - pushes branch to remote with the name |alias|
+git push -d origin |repobranchname| - deletes branch from repo
+
 gitignore ways to ignore
 ->|filename|.|extension| - just mentioning the name and extension makes git ignore the file for any changes.
 ->*.|extension| - git ignores all file with corresponding extension.
